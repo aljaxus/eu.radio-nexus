@@ -2,11 +2,8 @@
 
 ## Project setup
 ```
+git clone https://github.com/aljaxus/eu.radio-nexus.git
 npm install
-```
-
-### Compiles and hot-reloads for development
-```
 npm run serve
 ```
 
