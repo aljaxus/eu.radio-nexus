@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <title>RADIO-NEXUS</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style media="all">
+      body {
+        transition: opacity .6s;
+        background-color: #222222 !important;
+      }
+      body:not(.loaded) {
+        opacity: 0 !important;
+        overflow: hidden !important;
+      }
+    </style>
+    <script type="text/javascript">
+      window.onload = function(e){
+        console.log('***************************************************');
+        console.log('Preloader - all content is loaded!');
+        document.getElementsByTagName("body")[0].style.opacity = '1';
+        document.getElementsByTagName("body")[0].className += ' loaded';
+      }
+    </script>
+  </head>
+  <body>
+    <noscript>
+      <p>
+        We're sorry but Radio-Nexus <bold>doesn't work</bold> <bold>without JavaScript</bold> enabled. Please enable it to continue.
+        <br>
+        How to enable Javascript in:
+        <ul>
+          <li><a href="https://support.google.com/adsense/answer/12654?hl=en">Chrome</a></li>
+          <li><a href="https://help.opera.com/en/latest/web-preferences/#javaScript">Opera</a></li>
+          <li><a href="https://support.mozilla.org/en-US/kb/javascript-settings-for-interactive-web-pages">Mozilla firefox</a></li>
+          <li><a href="https://answers.microsoft.com/en-us/windows/forum/windows_10-networking/how-to-enable-javascript-in-microsoft-edge/ba12aa2e-6f2f-4d87-a990-5c1d2fd7036c">Microsoft Edge</a></li>
+          <li>Internet explorer -> Please, install and use any other browser listed above. Internet explorer is old, very usecure and we have no plans directly supporting it.</li>
+        </ul>
+      </p>
+    </noscript>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+  </body>
+</html>

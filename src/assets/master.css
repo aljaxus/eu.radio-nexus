@@ -1,0 +1,98 @@
+/* DISABLE SELECTING TEXT */
+body{
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	font-family: 'Sunflower', -apple-system, BlinkMacSystemFont, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+.canSelectText {
+	-webkit-user-select: text;
+	-khtml-user-select: text;
+	-moz-user-select: text;
+	-ms-user-select: text;
+	user-select: text;
+}
+/* DISABLE DRAGGING IMAGES */
+img {
+	-webkit-user-drag: none;
+	-khtml-user-drag: none;
+	-moz-user-drag: none;
+	-o-user-drag: none;
+}
+/* SCROLLBAR SETTINGS */
+body::-webkit-scrollbar {
+	width: 0;
+}
+::-webkit-scrollbar {
+	width: 4px;
+}
+::-webkit-scrollbar-track {
+	background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+	background: #999;
+}
+::-webkit-scrollbar-thumb:hover {
+	background: #777;
+}
+
+body {
+	overflow-x: hidden;
+}
+
+/* Page background */
+body:before {
+	content: "";
+	position: fixed;
+	left: -50px;
+	right: -50px;
+	top: -50px;
+	bottom: -50px;
+	z-index: -1;
+
+	display: block;
+	background-image: url('./img/raj-eiamworakul-523863-unsplash.jpeg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	background-attachment: fixed;
+	background-color: #303030;
+
+	filter: blur(5px);
+    -webkit-filter: blur(5px);
+
+	width: 120vw;
+	height: 120vh;
+
+	/* -webkit-filter: blur(1px);
+	-moz-filter: blur(1px);
+	-o-filter: blur(1px);
+	-ms-filter: blur(1px);
+	filter: blur(1px); */
+}
+.application {
+	background: unset !important;
+}
+
+
+/* Custil anchor element style */
+a:not(.v-btn):not(.v-list__tile):not(.default) {
+	text-decoration: none;
+	transition: color 0.3s;
+	color: #1976d2;
+}
+a:not(.v-btn):not(.v-list__tile):not(.default):hover {
+	color: #f1f1f1;
+}
+
+.v-badge--overlap .v-badge__badge {
+	right: -8px;
+	top: -8px;
+}
+.v-badge__badge {
+    height: 18px;
+	width: 18px;
+}
